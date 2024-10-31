@@ -26,7 +26,7 @@ if (count($args) !== 2 && count($args) !== 3) {
 }
 
 $bucketName = $args[1];
-$maxKeys = isset($args[2]) ? (int)$args[2] : 10;  // 默认maxKeys为 10
+$maxKeys = isset($args[2]) ? (int)$args[2] : 1000;  // 默认maxKeys为 1000
 
 try {
     $s3Client = new S3Client([
