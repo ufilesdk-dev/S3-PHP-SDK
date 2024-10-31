@@ -11,12 +11,12 @@ $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 // 获取环境变量
-$region = $_ENV['AWS_REGION'] ?? null;
-$endpoint = $_ENV['AWS_ENDPOINT'] ?? null;
-$signatureVersion = $_ENV['AWS_SIGNATURE_VERSION'] ?? 'v4';
-$forcePathStyle = $_ENV['AWS_FORCE_PATH_STYLE'] === 'true';
-$accessKey = $_ENV['AWS_ACCESS_KEY_ID'] ?? null;
-$secretKey = $_ENV['AWS_SECRET_ACCESS_KEY'] ?? null;
+$region = $_ENV['region'] ?? null;
+$endpoint = $_ENV['endpoint'] ?? null;
+$signatureVersion = $_ENV['signatureVersion'] ?? 'v4';
+$forcePathStyle = $_ENV['forcePathStyle'] === 'true';
+$accessKey = $_ENV['accessKeyId'] ?? null;
+$secretKey = $_ENV['secretAccessKey'] ?? null;
 
 
 $args = $argv;
