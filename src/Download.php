@@ -27,8 +27,7 @@ if (count($args) < 4) {
 
 $bucketName = $args[1];
 $keyName = $args[2];
-$downloadPath = $args[3];  // 本地下载路径
-
+$downloadPath = $args[3];
 
 // 初始化客户端
 try {
